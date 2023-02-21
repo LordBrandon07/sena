@@ -1,11 +1,13 @@
-# Cuantas letras del abecedario estan en la cadena, si estan repetidas cuentela solo una vez
+# Cuantas letras del abecedario estan en la cadena, si estan repetidas cuentela solo una vez.
 
-abecedario = 'abcdefghijklmnñopqrstuvwxyzabcxyzab'
+cadena = input('ingrese una cadena: ')
 
-count = 0
+def alfabeto(cadena):
+    cad = ''
+    for i in cadena:
+        if i not in cad:
+            cad += i
+    return len(cad)
 
-for i in abecedario:
-    if i in abecedario :
-        count += 1
-    
-print(count)
+
+print(alfabeto(cadena))

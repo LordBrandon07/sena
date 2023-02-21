@@ -2,3 +2,12 @@
 
 cadena = input('ingrese una cadena: ')
 
+def sub(cadena):
+    word = len(cadena)
+    count = -1
+    for i in range (word):
+        su = cadena [:2 + count]
+        count += 1
+        print(su)
+
+sub(cadena)
