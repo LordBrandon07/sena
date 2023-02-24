@@ -1,8 +1,10 @@
 # cuantas veces se repite un caracter dado
 
-def rep ():
-    cadena = input('ingrese una cadena: ')
-    caracter = input('ingrese el carecter: ')
+cadena = input('ingrese una cadena: ')
+caracter = input('ingrese el carecter: ')
+
+def rep (cadena, caracter):
+
 
     count = 0
 
@@ -12,4 +14,4 @@ def rep ():
             
     print(count)
     
-rep()
+rep(cadena, caracter)

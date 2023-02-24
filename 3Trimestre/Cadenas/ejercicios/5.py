@@ -1,11 +1,7 @@
-# Detetrminar que tipo de palabra es: aguda, grave, esdrujula sobre esdrujula
-
-cadena = input('ingrese una cadena: ')
-
-if cadena.find('é', -2):
-    print('es aguda')
-    
-elif not cadena.endswith('n'):
-    print('grave')
-else:
-    print('other')
+def tipoPalabra(c):
+    c = c.lower()
+    tildes = ['á','é','í','ó','ú']
+    for i in tildes:
+        if c[-1] == i or c[-2] == i and c[-1] == 's' or c[-1] == 'n':
+            print('Aguda')
+tipoPalabra('café')
